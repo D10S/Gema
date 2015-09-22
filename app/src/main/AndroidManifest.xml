@@ -20,10 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Logueo"></activity>
-        <activity android:name=".Registro"></activity>
-        <activity android:name=".HelloCliente"></activity>
-        <activity android:name=".HelloVendedor"></activity>
+        <activity android:name=".Logueo"
+            android:theme="@android:style/Theme.NoTitleBar"
+            ></activity>
+        <activity android:name=".Registro"
+            android:theme="@android:style/Theme.NoTitleBar"
+            ></activity>
+        <activity android:name=".HelloCliente"
+            android:theme="@android:style/Theme.NoTitleBar"
+            ></activity>
+        <activity android:name=".HelloVendedor"
+            android:theme="@android:style/Theme.NoTitleBar"
+            ></activity>
     </application>
 
 </manifest>
