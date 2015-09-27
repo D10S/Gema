@@ -5,6 +5,7 @@
     android:stretchColumns="1"
     android:paddingTop="0dip"
     android:layout_gravity="top"
+    android:background="#ff20e0ff"
     >
 
     <TableRow>
@@ -12,6 +13,7 @@
             android:id="@+id/image"
             android:layout_width="50dip"
             android:layout_height="50dip"
+            android:background="@drawable/ic_portrait_black_36dp"
             android:layout_marginLeft="10dip"/>
         <TableLayout
             android:layout_width="wrap_content"
@@ -30,7 +32,8 @@
                     android:layout_gravity="left|center_vertical"
                     android:textSize="17dip"
                     android:layout_marginLeft="10dip"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:text="Nombre del Producto" />
             </TableRow>
             <TableRow >
                 <TextView
@@ -41,13 +44,15 @@
                     android:layout_weight="1"
                     android:layout_gravity="left|center_vertical"
                     android:textSize="14dip"
-                    android:layout_marginLeft="10dip"/>
+                    android:layout_marginLeft="10dip"
+                    android:text="Descripcion del producto\n hasta 2 lineas ;)      -> Costo!" />
             </TableRow>
         </TableLayout>
         <ImageView
             android:layout_width="25dip"
             android:id="@+id/rightcheck"
             android:layout_height="25dip"
+            android:background="@drawable/ic_face_black_36dp"
             android:layout_gravity="left|center_vertical"
             android:scaleType="centerCrop"
             />
@@ -57,7 +62,7 @@
             android:freezesText="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5px" />
+            android:layout_marginTop="10px" />
 
     </TableRow>
 </TableLayout>

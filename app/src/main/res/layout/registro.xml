@@ -8,8 +8,8 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/imageView"
-        android:layout_marginTop="38dp"
-        android:background="@android:drawable/star_on"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/ic_portrait_black_36dp"
         android:onClick="cargar"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -24,30 +24,9 @@
         android:hint="Nombre"
         android:textStyle="normal"
         android:enabled="true"
-        android:layout_below="@+id/editText4"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText4"
-        android:hint="Escuela"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="37dp"
         android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="date"
-        android:ems="10"
-        android:id="@+id/editText5"
-        android:gravity="center"
-        android:layout_below="@+id/editText3"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/button3" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -57,8 +36,8 @@
         android:id="@+id/editText6"
         android:hint="e-mail"
         android:gravity="center"
-        android:layout_below="@+id/editText5"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/editText7" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -88,5 +67,26 @@
         android:id="@+id/checkBox"
         android:layout_below="@+id/editText7"
         android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/escuelas"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6"
+        android:gravity="center"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento"
+        android:id="@+id/button3"
+        android:layout_below="@+id/editText3"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6"
+        android:onClick="bith" />
 
 </RelativeLayout>

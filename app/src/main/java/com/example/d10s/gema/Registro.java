@@ -1,6 +1,8 @@
 package com.example.d10s.gema;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.DialogFragment;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
@@ -8,10 +10,19 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.TimeZone;
 
 /**
  * Created by D10S on 09/09/2015.
@@ -20,28 +31,31 @@ public class Registro extends Activity {
     public int RESULT_LOAD_IMG=1;
     public ImageView imgView;
     public CheckBox vendedor;
-    public EditText escuela;
     public EditText nombre;
     public EditText fecha;
     public EditText correo;
     public EditText contra;
+    public Button reg;
+    public Spinner spinner1;
+    public String day1, month1, year1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registro);
+        spinner1 = (Spinner) findViewById(R.id.spinner);
+        List<String> list = new ArrayList<String>();
 
-        escuela = (EditText) findViewById(R.id.editText4);
+        reg = (Button) findViewById(R.id.button3);
         nombre = (EditText) findViewById(R.id.editText3);
-        fecha = (EditText) findViewById(R.id.editText5);
         correo = (EditText) findViewById(R.id.editText6);
         contra = (EditText) findViewById(R.id.editText7);
         vendedor = (CheckBox) findViewById(R.id.checkBox);
     }
 
     public void vamos(View view){
-        String esc = escuela.getText().toString().trim();
+        String esc = spinner1.getSelectedView().toString();
         String nom = nombre.getText().toString().trim();
-        String fec = fecha.getText().toString().trim();
+        String fec = day1+"/"+month1+"/"+year1;
         String cor = correo.getText().toString().trim();
         String con = contra.getText().toString().trim();
 
@@ -98,4 +112,28 @@ public class Registro extends Activity {
         }
 
     }
+
+    public void bith(View view){
+        Calendar cal = Calendar.getInstance(TimeZone.getDefault());
+        DatePickerDialog datePicker = new DatePickerDialog(this,
+                R.style.AppTheme, datePickerListener,
+                cal.get(Calendar.YEAR)-23,
+                cal.get(Calendar.MONTH),
+                cal.get(Calendar.DAY_OF_MONTH));
+        datePicker.setCancelable(false);
+        datePicker.setTitle("Selecciona tu fecha de nacimiento");
+        datePicker.show();
+    }
+    private DatePickerDialog.OnDateSetListener datePickerListener = new DatePickerDialog.OnDateSetListener() {
+
+        // when dialog box is closed, below method will be called.
+        public void onDateSet(DatePicker view, int selectedYear, int selectedMonth, int selectedDay)
+        {
+            year1 = String.valueOf(selectedYear);
+            month1 = String.valueOf(selectedMonth + 1);
+            day1 = String.valueOf(selectedDay);
+            reg.setText(day1+"/"+month1+"/"+year1);
+        }
+    };
+
 }

@@ -3,4 +3,26 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="escuelas">
+        <item>ESIME A</item>
+        <item>ESIME C</item>
+        <item>ESIME T</item>
+        <item>ESIME Z</item>
+        <item>ESIA ZACATENCO</item>
+        <item>ESIA TECAMACHALCO</item>
+        <item>ESIT</item>
+        <item>ESIQUIE</item>
+        <item>UPIBI</item>
+        <item>UPIICSA</item>
+        <item>UPIITA</item>
+        <item>ESCA TEPEPAN</item>
+        <item>ESM</item>
+        <item>ESFM</item>
+        <item>ENCB</item>
+        <item>ESEO</item>
+        <item>ESCA Sto</item>
+        <item>ESE</item>
+        <item>EST</item>
+        <item>ENMH</item>
+    </string-array>
 </resources>
