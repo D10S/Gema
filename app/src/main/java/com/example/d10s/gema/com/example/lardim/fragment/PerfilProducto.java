@@ -39,4 +39,8 @@ public class PerfilProducto extends Fragment {
         final  View rootView = inflater.inflate(R.layout.activity_main,Parent,false);
         return rootView;
     }
+
+    public void Comprar(){
+
+    }
 }
