@@ -28,7 +28,9 @@ public class Registro extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*
         setContentView(R.layout.registro);
+
 
         escuela = (EditText) findViewById(R.id.editText4);
         nombre = (EditText) findViewById(R.id.editText3);
@@ -36,6 +38,7 @@ public class Registro extends Activity {
         correo = (EditText) findViewById(R.id.editText6);
         contra = (EditText) findViewById(R.id.editText7);
         vendedor = (CheckBox) findViewById(R.id.checkBox);
+         */
     }
 
     public void vamos(View view){
@@ -81,7 +84,7 @@ public class Registro extends Activity {
                 int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
                 String imgDecodableString = cursor.getString(columnIndex);
                 cursor.close();
-                imgView = (ImageView) findViewById(R.id.imageView);
+           //     imgView = (ImageView) findViewById(R.id.imageView);
                 imgView.destroyDrawingCache();
                 imgView.setMaxHeight(50);
                 imgView.setMaxWidth(50);

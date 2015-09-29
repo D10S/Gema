@@ -4,15 +4,17 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <uses-sdk android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/gema_logo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        >
+        android:theme="@style/CustomActionBarTheme">
         <activity
-            android:name=".MainActivity"
-            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.org.gema.activities.MainActivity"
+            android:theme="@style/CustomActionBarTheme"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.org.gema.activities.EscuelaPickerActivity"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:label="@string/welcome_message"/>
+        <activity android:name="com.org.gema.activities.LogIn"></activity>
         <activity android:name=".Logueo"></activity>
         <activity android:name=".Registro"></activity>
         <activity android:name=".HelloCliente"></activity>

@@ -25,7 +25,7 @@ public class HelloCliente extends ExpandableListActivity {
     private static final String STR_UNCHECKED = " has unChecked!";
     private int ParentClickStatus=-1;
     private ArrayList<Producto> parents;
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -52,6 +52,8 @@ public class HelloCliente extends ExpandableListActivity {
      * here should come your data service implementation
      * @return
      */
+
+    /*
     private ArrayList<Producto> buildDummyData()
     {
         // Creating ArrayList of type parent class to store parent class objects
@@ -138,6 +140,8 @@ public class HelloCliente extends ExpandableListActivity {
     /**
      * A Custom adapter to create Parent view (Used grouprow.xml) and Child View((Used childrow.xml).
      */
+
+    /*
     public abstract class MyExpandableListAdapter extends BaseExpandableListAdapter
     {
         private LayoutInflater inflater;
@@ -158,10 +162,10 @@ public class HelloCliente extends ExpandableListActivity {
             final Producto parent = parents.get(groupPosition);
 
             // Inflate grouprow.xml file for parent rows
-            convertView = inflater.inflate(R.layout.hellocliente, parentView, false);
+           //convertView = inflater.inflate(R.layout.hellocliente, parentView, false);
 
             // Get grouprow.xml file elements and set values
-            ((TextView) convertView.findViewById(R.id.text1)).setText(parent.getText1());
+            //((TextView) convertView.findViewById(R.id.text1)).setText(parent.getText1());
             ((TextView) convertView.findViewById(R.id.text)).setText(parent.getText2());
             ImageView image=(ImageView)convertView.findViewById(R.id.image);
 
@@ -169,7 +173,7 @@ public class HelloCliente extends ExpandableListActivity {
                     getResources().getIdentifier(
                             "com.androidexample.customexpandablelist:drawable/setting"+parent.getName(),null,null));
 
-            ImageView rightcheck=(ImageView)convertView.findViewById(R.id.rightcheck);
+            //ImageView rightcheck=(ImageView)convertView.findViewById(R.id.rightcheck);
 
             //Log.i("onCheckedChanged", "isChecked: "+parent.isChecked());
 
@@ -255,6 +259,7 @@ public class HelloCliente extends ExpandableListActivity {
 
         /******************* Checkbox Checked Change Listener ********************/
 
+    /*
         private final class CheckUpdateListener implements CompoundButton.OnCheckedChangeListener
         {
             private final Producto parent;
@@ -278,5 +283,5 @@ public class HelloCliente extends ExpandableListActivity {
         }
         /***********************************************************************/
 
-    }
+    //}
 }

@@ -3,4 +3,19 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Inicia espacio de entradas de LogIn -->
+
+    <string name="welcome_message">WELCOME</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="user_key_value">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="user_mail_value">Correo electrónico</string>
+    <string name="user_date_of_birth_value">Fecha de nacimiento</string>
+    <string name="user_escuela_value">Escuela</string>
+
+    <!-- Termina espacio de entradas de LogIn -->
+
+
 </resources>

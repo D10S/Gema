@@ -12,6 +12,6 @@ public class Logueo extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainvendedor);
+        //setContentView(R.layout.mainvendedor);
     }
 }

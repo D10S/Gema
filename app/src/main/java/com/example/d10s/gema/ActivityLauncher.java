@@ -17,7 +17,7 @@ public class ActivityLauncher {
     }
 
     public void setActivityToBeLaunched(Activity activityToBeLaunched){
-        this.activityToBeLaunched = activityToBeLaunched;
+        ActivityLauncher.activityToBeLaunched = activityToBeLaunched;
     }
 
     public void launchLogueo(){
