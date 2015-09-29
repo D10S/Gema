@@ -24,4 +24,9 @@ public class ActivityLauncher {
         Intent logueo = new Intent(context, Logueo.class);
         context.startActivity(logueo);
     }
+
+    public void LaunchSucces(){
+        Intent succes = new Intent(context,HelloCliente.class);
+        context.startActivity(succes);
+    }
 }
