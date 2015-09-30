@@ -41,15 +41,22 @@ public class Registro extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*
         setContentView(R.layout.registro);
         spinner1 = (Spinner) findViewById(R.id.spinner);
         List<String> list = new ArrayList<String>();
 
+<<<<<<< HEAD
         reg = (Button) findViewById(R.id.button3);
+=======
+
+        escuela = (EditText) findViewById(R.id.editText4);
+>>>>>>> 4620b2f5fc5cb1b6b90f14e335f0541fc21adde9
         nombre = (EditText) findViewById(R.id.editText3);
         correo = (EditText) findViewById(R.id.editText6);
         contra = (EditText) findViewById(R.id.editText7);
         vendedor = (CheckBox) findViewById(R.id.checkBox);
+         */
     }
 
     public void vamos(View view){
@@ -95,7 +102,7 @@ public class Registro extends Activity {
                 int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
                 String imgDecodableString = cursor.getString(columnIndex);
                 cursor.close();
-                imgView = (ImageView) findViewById(R.id.imageView);
+           //     imgView = (ImageView) findViewById(R.id.imageView);
                 imgView.destroyDrawingCache();
                 imgView.setMaxHeight(50);
                 imgView.setMaxWidth(50);

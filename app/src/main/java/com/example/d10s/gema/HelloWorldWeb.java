@@ -27,7 +27,7 @@ public class HelloWorldWeb extends AsyncTask<String,String,String>{
         {
             String result = null;
             try{
-                HttpURLConnection con = (HttpURLConnection) new URL("http://"+getURL()+":8080/HelloWorldWeb/AltaProducto/").openConnection();
+                HttpURLConnection con = (HttpURLConnection) new URL("http://"+getURL()+"/HelloWorldWeb/AltaProducto/").openConnection();
                 con.setDoOutput(true);
                 con.setRequestMethod("POST");
                 DataOutputStream salida = new DataOutputStream(con.getOutputStream());
@@ -59,7 +59,7 @@ public class HelloWorldWeb extends AsyncTask<String,String,String>{
 
     private String getURL()
     {
-        return "192.168.1.123";
+        return "192.168.1.123:8080";
     }
 
 }

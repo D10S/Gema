@@ -3,6 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string-array name="escuelas">
         <item>ESIME A</item>
         <item>ESIME C</item>
@@ -25,4 +26,21 @@
         <item>EST</item>
         <item>ENMH</item>
     </string-array>
+=======
+
+    <!-- Inicia espacio de entradas de LogIn -->
+
+    <string name="welcome_message">WELCOME</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="user_key_value">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="user_mail_value">Correo electrónico</string>
+    <string name="user_date_of_birth_value">Fecha de nacimiento</string>
+    <string name="user_escuela_value">Escuela</string>
+
+    <!-- Termina espacio de entradas de LogIn -->
+
+
+>>>>>>> 4620b2f5fc5cb1b6b90f14e335f0541fc21adde9
 </resources>

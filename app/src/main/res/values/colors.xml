@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_text">#e6e6e6</color>
+    <color name="back_ground_1">#fac736</color>
+    <color name="azul_botones">#ff2d9a94</color>
+    <color name="azul_botones_presionado">#ff2d9a24</color>
+
+</resources>

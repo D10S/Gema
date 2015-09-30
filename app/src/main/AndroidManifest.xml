@@ -4,15 +4,22 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <uses-sdk android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/gema_logo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        >
+        android:theme="@style/CustomActionBarTheme">
         <activity
+<<<<<<< HEAD
             android:name=".MainActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+=======
+            android:name="com.org.gema.activities.MainActivity"
+            android:theme="@style/CustomActionBarTheme"
+>>>>>>> 4620b2f5fc5cb1b6b90f14e335f0541fc21adde9
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".Logueo"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             ></activity>
@@ -32,6 +40,16 @@
         <activity android:name=".HelloVendedor"
             android:theme="@android:style/Theme"
             ></activity>
+=======
+        <activity android:name="com.org.gema.activities.EscuelaPickerActivity"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:label="@string/welcome_message"/>
+        <activity android:name="com.org.gema.activities.LogIn"></activity>
+        <activity android:name=".Logueo"></activity>
+        <activity android:name=".Registro"></activity>
+        <activity android:name=".HelloCliente"></activity>
+        <activity android:name=".HelloVendedor"></activity>
+>>>>>>> 4620b2f5fc5cb1b6b90f14e335f0541fc21adde9
     </application>
 
 </manifest>

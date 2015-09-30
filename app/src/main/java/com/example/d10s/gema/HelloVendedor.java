@@ -12,6 +12,6 @@ public class HelloVendedor extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hellovendedor);
+        //setContentView(R.layout.hellovendedor);
     }
 }
