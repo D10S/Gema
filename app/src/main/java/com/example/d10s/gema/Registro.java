@@ -70,13 +70,22 @@ public class Registro extends Activity {
         if(!esc.isEmpty() && !nom.isEmpty() && !fec.isEmpty() && !cor.isEmpty() && !con.isEmpty())
         {
             if(vendedor.isChecked()){
-                Intent holi = new Intent(this, HelloVendedor.class);
-                startActivity(holi);
+                new AltaUsuario(Registro.this).execute("vendedor", cor, nom, con);
+                if(AltaUsuario.result != null)
+                {
+                    Intent holi = new Intent(this, HelloVendedor.class);
+                    startActivity(holi);
+                }
             }
             else if (!vendedor.isChecked())
             {
-                Intent holo = new Intent (this, HelloCliente.class);
-                startActivity(holo);
+                new AltaUsuario(Registro.this).execute("comprador", cor, nom, con);
+                if(AltaUsuario.result != null)
+                {
+                    Intent holo = new Intent(this, HelloCliente.class);
+                    startActivity(holo);
+                }
+
             }
         }
         else
