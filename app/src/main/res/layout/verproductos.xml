@@ -26,7 +26,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:layout_weight="1"
-                    android:layout_gravity="left|center_vertical"
+                    android:layout_gravity="center"
                     android:textSize="17dip"
                     android:layout_marginLeft="10dip"
                     android:textStyle="bold"
@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:textColor="#000000"
                     android:layout_weight="1"
-                    android:layout_gravity="left|center_vertical"
+                    android:layout_gravity="center"
                     android:textSize="14dip"
                     android:layout_marginLeft="10dip"
                     android:text="Descripcion del producto\n hasta 2 lineas ;)      -> Costo!" />
@@ -60,7 +60,7 @@
             android:focusable="false"
             android:layout_alignParentRight="true"
             android:freezesText="false"
-            android:layout_marginLeft="-60dip"
+            android:layout_marginLeft="-80dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15px" />

@@ -27,10 +27,10 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             ></activity>
         <activity android:name=".HelloCliente"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:theme="@android:style/Theme"
             ></activity>
         <activity android:name=".HelloVendedor"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:theme="@android:style/Theme"
             ></activity>
     </application>
 
